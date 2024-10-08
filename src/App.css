@@ -1,0 +1,98 @@
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.app {
+  text-align: center;
+  color: #fff;
+  min-height: 100vh;
+  background-attachment: fixed; /* Fix the background */
+}
+
+.weather, .forecast, .search, .cities {
+  margin: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.forecast-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.forecast-item {
+  border: 1px solid #000000;
+  border-radius: 8px;
+  padding: 5px;
+  margin: 10px;
+  width: 160px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Background styles */
+.clear-sky, .partly-cloudy, .cloudy, .overcast, .drizzle, .light-rain, .rain, .showers, .thunderstorm, .snow, .snow-showers, .default {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.clear-sky {
+  background-image: url('../public/clear-sky.jpg');
+}
+
+.partly-cloudy {
+  background-image: url('../public/partly-cloudy.jpg');
+}
+
+.cloudy {
+  background-image: url('../public/cloudy.jpg');
+}
+
+.overcast {
+  background-image: url('../public/overcast.jpg');
+}
+
+.drizzle, .light-rain, .rain, .showers {
+  background-image: url('../public/rain.jpg');
+}
+
+.thunderstorm {
+  background-image: url('../public/thunderstorm.jpg');
+}
+
+.snow, .snow-showers {
+  background-image: url('../public/snow.jpg');
+}
+
+.default {
+  background-image: url('../public/default.jpg');
+}
+
+input, button {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 5px;
+  border: none;
+  font-size: 16px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
